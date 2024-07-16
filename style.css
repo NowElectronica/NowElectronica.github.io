@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth; /*para que al hacer clik en un anchor o button con un id la pag se deslice suevemente y no se haga*/
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -11,14 +15,14 @@ header {
     color: white;
     text-align: center;
     padding: 2rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.267);
 }
 
 header h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 3rem;
     margin: 0;
-    color: #005bb5;
+    color: #0073e6;
 }
 
 header p {
@@ -28,10 +32,10 @@ header p {
 }
 
 nav {
-    background-color: #0073e6;
+    background-color: #dfdfdf34;
     text-align: center;
     padding: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px rgba(36, 36, 36, 0.527);
 }
 
 nav ul {
@@ -199,8 +203,7 @@ button:hover {
 }
 
 footer {
-    background-color: #333;
-    
+    background-color: #f4f4f4;
     color: rgb(34, 34, 34);
     text-align: center;
     padding: 1rem 0;
@@ -225,4 +228,31 @@ footer {
 
 .icon-scale {
     font-size: 80px;
+}
+
+.buton-inicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0073e6;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+.section__divide {
+    display: block;
+    width: 90%;
+    height: 1px;
+    margin: 2rem;
+    background-color: #000;
+    opacity: .2;
+    margin-left: 4rem;
+}
+
+.azul {
+    color:#0073e6;
+    font-weight: 800;
+    text-align: center;
 }
