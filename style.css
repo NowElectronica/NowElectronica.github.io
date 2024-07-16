@@ -2,6 +2,31 @@ html {
     scroll-behavior: smooth; /*para que al hacer clik en un anchor o button con un id la pag se deslice suevemente y no se haga*/
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+    
+}
+
+::-webkit-scrollbar-track {
+    webkit-box-shadow: inset 0 0 6px #e3ebef;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #e3ebef;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #9fb6c3;
+    -webkit-box-shadow: none;
+    height: 1px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #9fb6c3
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -11,11 +36,9 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #282829, yellow);
-    color: white;
+
     text-align: center;
     padding: 2rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.267);
 }
 
 header h1 {
@@ -32,10 +55,13 @@ header p {
 }
 
 nav {
-    background-color: #dfdfdf34;
-    text-align: center;
+    background-color: #ffffff;
+    text-align: right;
     padding: 1rem 0;
-    box-shadow: 0px 4px 20px rgba(36, 36, 36, 0.527);
+    position: fixed;
+    width: 100%;
+    z-index: 301;
+    border-style:groove
 }
 
 nav ul {
@@ -80,7 +106,6 @@ h2 {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 1rem;
-    position: relative;
 }
 
 h2::after {
@@ -255,4 +280,50 @@ footer {
     color:#0073e6;
     font-weight: 800;
     text-align: center;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    float: right;
+    background-color: #0073e6;
+}
+
+
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none; /* Ocultar el menú en móviles */
+        flex-direction: column; /* Cambiar a columna */
+        position: absolute; /* Posicionarlo */
+        background-color: rgb(240, 240, 240); /* Fondo blanco */
+        top: 60px; /* Ajusta según sea necesario */
+        right: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%; /* Ancho completo */
+        z-index: 1000; /* Asegurarse que se muestre encima */
+    }
+
+    nav ul.show {
+        display: flex; /* Mostrar menú cuando se activa */
+        
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar el botón de hamburguesa en móviles */
+    }
+}
+
+.logo img {
+    height: 75px; 
+    cursor: pointer;
+    float: left;
+
+
+}
+.elementos-nav {
+
 }

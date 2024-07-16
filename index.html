@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/Logo_instagram.jpg" type="image/png">
+    <link rel="icon" href="/img/3_1.png" type="image/png">
     <title>Now Electrónica - Reparación de PC</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -12,25 +12,25 @@
     <!--particulsa fondo-->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
-<body>
-    
+<body id="inicio">
 
-
-    <header id="inicio">
-        <div class="container">
-            <h1>Now Electrónica</h1>
-            <p>Reparación de PC de confianza</p>
+        <nav class="nav">
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        <div class="logo">
+            <img src="/img/2_1.png"alt="logo">
         </div>
-    </header>
+            <ul>
+                <li><a href="#servicios" class="elementos-nav">Servicios</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#testimonios">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
 <main>
-    <nav class="nav">
-        <ul>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-            <li><a href="#testimonios">Reseñas</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+
 
     <section id="servicios">
         <div class="container">
@@ -120,5 +120,14 @@
 </main>
 <span class="section__divide"></span>
 <p class="azul">© Copyright NowElectronica 2024</p>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show'); // Alternar la clase para mostrar/ocultar el menú
+    });
+</script>
+
 </body>
 </html>
