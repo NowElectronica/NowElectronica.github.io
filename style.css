@@ -33,6 +33,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 header {
@@ -57,17 +58,21 @@ header p {
 nav {
     background-color: #ffffff;
     text-align: right;
-    padding: 1rem 0;
+    padding: 0.4rem 0;
     position: fixed;
     width: 100%;
     z-index: 301;
-    border-style:groove
+    border-style: groove;
+    
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: right;
+    padding-top: 25px;
+    padding-right: 50px;
 }
 
 nav ul li {
@@ -83,7 +88,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #32a2ec;
+    color: #FF9A00;
 }
 
 .container {
@@ -305,12 +310,14 @@ footer {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         width: 100%; /* Ancho */
         z-index: 1000; /* Asegurarse que este arriba de lo demas */
-        top: 85px;
+        top: 105px;
         border-radius: 5%;
+        text-align: center;
     }
 
     nav ul.show {
         display: flex; /* Mostrar menú cuando se activa */
+        padding-right: 0px;
         
     }
 
@@ -323,6 +330,7 @@ footer {
     height: 75px; 
     cursor: pointer;
     float: left;
+    padding-left: 9px;
 }
 
 
@@ -332,4 +340,16 @@ li {
 
 .hr-hidden {
 border: none;
+}
+
+.elementos-nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 900;
+    padding: 0 !important;
+}
+
+.naranja {
+color:#FF9A00;
 }
