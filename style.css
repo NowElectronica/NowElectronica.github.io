@@ -296,15 +296,17 @@ footer {
 
 @media (max-width: 600px) {
     nav ul {
-        display: none; /* Ocultar el menú en móviles */
-        flex-direction: column; /* Cambiar a columna */
+        display: none; /* Ocultar el menu en celu */
+        flex-direction: column; /* Cambiar columna o filas*/
         position: absolute; /* Posicionarlo */
-        background-color: rgb(240, 240, 240); /* Fondo blanco */
+        background-color: rgb(240, 240, 240); /* Fondo */
         top: 60px; /* Ajusta según sea necesario */
         right: 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        width: 100%; /* Ancho completo */
-        z-index: 1000; /* Asegurarse que se muestre encima */
+        width: 100%; /* Ancho */
+        z-index: 1000; /* Asegurarse que este arriba de lo demas */
+        top: 85px;
+        border-radius: 5%;
     }
 
     nav ul.show {
@@ -313,7 +315,7 @@ footer {
     }
 
     .menu-toggle {
-        display: block; /* Mostrar el botón de hamburguesa en móviles */
+        display: block; /* Mostrar el boton de hamburguesa en celulares */
     }
 }
 
@@ -321,9 +323,13 @@ footer {
     height: 75px; 
     cursor: pointer;
     float: left;
-
-
 }
-.elementos-nav {
 
+
+li {
+    padding-right: 10px;
+}
+
+.hr-hidden {
+border: none;
 }
