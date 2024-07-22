@@ -7,8 +7,9 @@ html {
     
 }
 
+/*configuracion estetica scrollbar (barra de subir y bajar la pagina a la izquierda)*/
 ::-webkit-scrollbar-track {
-    webkit-box-shadow: inset 0 0 6px #e3ebef;
+    -webkit-box-shadow: inset 0 0 6px #e3ebef;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: #e3ebef;
@@ -55,6 +56,7 @@ header p {
     color: #0274e6;
 }
 
+/*configuraciond de la nav bar*/
 nav {
     background-color: #ffffff;
     text-align: right;
@@ -87,10 +89,21 @@ nav ul li a {
     transition: color 0.3s;
 }
 
+/*configuracion botones nav*/
+.elementos-nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 900;
+    padding: 0 !important;
+}
+
+/*animacion de los botones de la nav bar*/
 nav ul li a:hover {
     color: #FF9A00;
 }
 
+/*caja grande sobre toda la pag*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -122,6 +135,7 @@ h2::after {
     margin: 0.5rem auto;
 }
 
+/*cards*/
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -137,11 +151,13 @@ h2::after {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/*animacion cards*/
 .service-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/*Titulos cards*/
 .service-item h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.8rem;
@@ -149,11 +165,13 @@ h2::after {
     margin-bottom: 1rem;
 }
 
+/*descripcion de las cards (descripcion de el servicio)*/
 .service-item p {
     font-size: 1rem;
     color: #666;
 }
 
+/*comentarios de la gente*/
 blockquote {
     background: #f9f9f9;
     border-left: 10px solid #0073e6;
@@ -168,39 +186,16 @@ blockquote p {
     display: inline;
 }
 
+/*configuracion de la estetica del citado (nombre de quien escribio la reseña)*/
 blockquote cite {
     display: block;
     text-align: right;
-    color: #333;
+    color: #461515;
     font-weight: bold;
     margin-top: 0.5rem;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-label {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-input, textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 150px;
-}
-
+/*boton menu de hamburgresa*/
 button {
     padding: 0.75rem 1.5rem;
     background-color: #0073e6;
@@ -212,10 +207,12 @@ button {
     transition: background 0.3s;
 }
 
+/*animacion boton hamburgresa*/
 button:hover {
     background-color: #005bb5;
 }
 
+/*seccion de contacto*/
 .contact-info {
     text-align: center;
     margin-top: 1rem;
@@ -228,6 +225,7 @@ button:hover {
     transition: color 0.3s;
 }
 
+/*animacion anchor de instagram*/
 .contact-info a:hover {
     color: #005bb5;
 }
@@ -256,10 +254,12 @@ footer {
     }
 }
 
+/*tamaño de los iconos de las cards*/
 .icon-scale {
     font-size: 80px;
 }
 
+/*boton para ir al inico de la pag (ariba de todo)*/
 .buton-inicio {
     position: fixed;
     bottom: 20px;
@@ -269,8 +269,8 @@ footer {
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-
 }
+
 .section__divide {
     display: block;
     width: 90%;
@@ -281,11 +281,19 @@ footer {
     margin-left: 4rem;
 }
 
+/*clase color y negrita del Copyright(footer)*/
+
 .azul {
     color:#0073e6;
     font-weight: 800;
     text-align: center;
 }
+/*clase color especifico*/
+.naranja {
+    color:#FF9A00;
+    }
+
+/*configuracion de cuando aparece el menu de hamburgresa*/
 .menu-toggle {
     display: none;
     background: none;
@@ -297,8 +305,7 @@ footer {
     background-color: #0073e6;
 }
 
-
-
+/*configuracion de el menu de hamburgresa*/
 @media (max-width: 600px) {
     nav ul {
         display: none; /* Ocultar el menu en celu */
@@ -316,7 +323,7 @@ footer {
     }
 
     nav ul.show {
-        display: flex; /* Mostrar menú cuando se activa */
+        display: flex; /* Mostrar menu cuando se activa */
         padding-right: 0px;
         
     }
@@ -326,6 +333,7 @@ footer {
     }
 }
 
+/*configuracion del logo de la empresa (el que se encuentra en la nav)*/
 .logo img {
     height: 75px; 
     cursor: pointer;
@@ -333,23 +341,10 @@ footer {
     padding-left: 9px;
 }
 
-
 li {
     padding-right: 10px;
 }
-
+/*configuracion para que los hr no sean visibles*/
 .hr-hidden {
 border: none;
-}
-
-.elementos-nav {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.4rem;
-    color: #333;
-    font-weight: 900;
-    padding: 0 !important;
-}
-
-.naranja {
-color:#FF9A00;
 }
